@@ -1,0 +1,20 @@
+/*
+ * This file contains the core CSS needed for Tailwind.
+ * The three @tailwind directives are replaced by Tailwind at build time
+ * with all of the generated utility styles.
+ */
+
+/* These directives are a critical part of the setup */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * This is a good place for any global styles you need.
+ * Here, we set the font for the entire body and add a transition
+ * to make the dark mode toggle smooth.
+ */
+body {
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s ease;
+}
